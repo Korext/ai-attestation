@@ -1,0 +1,48 @@
+{
+  "name": "@korext/ai-attestation",
+  "version": "1.0.0",
+  "description": "Track and attest AI generated code in your repository. Open standard for AI code transparency.",
+  "keywords": [
+    "ai",
+    "attestation",
+    "governance",
+    "compliance",
+    "copilot",
+    "cursor",
+    "claude-code",
+    "codeium",
+    "aider",
+    "code-quality",
+    "transparency",
+    "audit",
+    "git-hook",
+    "open-standard"
+  ],
+  "author": "Korext <tombruno@korext.com> (https://korext.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://oss.korext.com/ai-attestation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korext/ai-attestation"
+  },
+  "bugs": {
+    "url": "https://github.com/korext/ai-attestation/issues"
+  },
+  "bin": {
+    "ai-attestation": "./bin/ai-attestation.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "schema.json",
+    "LICENSE",
+    "LICENSE-SCHEMA",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

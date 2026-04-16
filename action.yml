@@ -1,0 +1,49 @@
+name: 'AI Attestation'
+description: 'Enforce AI code governance policies using .ai-attestation.yaml'
+author: 'Korext'
+
+branding:
+  icon: 'shield'
+  color: 'blue'
+
+inputs:
+  fail-on-missing:
+    description: 'Fail if .ai-attestation.yaml is missing from the repository'
+    required: false
+    default: 'true'
+  minimum-governance-score:
+    description: 'Minimum governance score required to pass (0-100). Overrides the policy in the attestation file.'
+    required: false
+    default: ''
+  block-unscanned:
+    description: 'Block AI code that has not been governance scanned. Overrides the policy in the attestation file.'
+    required: false
+    default: ''
+  require-review:
+    description: 'Require human review for AI assisted code. Overrides the policy in the attestation file.'
+    required: false
+    default: ''
+  mandatory-packs:
+    description: 'Comma-separated list of governance packs that must be applied. Overrides the policy in the attestation file.'
+    required: false
+    default: ''
+  attestation-path:
+    description: 'Path to the attestation file relative to workspace root'
+    required: false
+    default: '.ai-attestation.yaml'
+
+outputs:
+  result:
+    description: 'Policy check result: PASS, WARN, or FAIL'
+  ai-percentage:
+    description: 'Percentage of AI assisted commits'
+  governance-score:
+    description: 'Current governance score (if available)'
+  tools-detected:
+    description: 'Comma-separated list of detected AI tools'
+  summary:
+    description: 'Human readable summary of the attestation'
+
+runs:
+  using: 'node20'
+  main: 'action/index.js'
