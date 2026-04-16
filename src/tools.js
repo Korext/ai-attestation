@@ -124,6 +124,94 @@ const TOOLS = [
     commitPatterns: [/openhands/i, /all.hands/i],
     fileHeaders: [],
     configKeys: []
+  },
+  {
+    id: 'amazon-q',
+    name: 'Amazon Q Developer',
+    // Verified: Amazon Q (formerly CodeWhisperer) adds attribution
+    // Source: AWS docs, public commits
+    coAuthorEmails: [],
+    coAuthorPatterns: [/amazon.q/i, /codewhisperer/i],
+    commitPatterns: [/amazon.q/i, /codewhisperer/i],
+    fileHeaders: [/amazon.q/i, /codewhisperer/i],
+    configKeys: []
+  },
+  {
+    id: 'jetbrains-ai',
+    name: 'JetBrains AI Assistant',
+    // Community reported patterns
+    // Source: JetBrains docs, IDE telemetry headers
+    coAuthorEmails: [],
+    coAuthorPatterns: [/jetbrains.*ai/i],
+    commitPatterns: [/jetbrains.*ai/i, /ai.*assistant/i],
+    fileHeaders: [/jetbrains/i],
+    configKeys: []
+  },
+  {
+    id: 'sourcegraph-cody',
+    name: 'Sourcegraph Cody',
+    // Verified: Cody adds attribution markers
+    // Source: Sourcegraph docs, public commits
+    coAuthorEmails: ['cody@sourcegraph.com'],
+    coAuthorPatterns: [/cody/i, /sourcegraph/i],
+    commitPatterns: [/cody/i, /sourcegraph/i],
+    fileHeaders: [/sourcegraph.*cody/i],
+    configKeys: []
+  },
+  {
+    id: 'replit-ai',
+    name: 'Replit AI',
+    // Community reported patterns
+    // Source: Replit platform, public repos
+    coAuthorEmails: [],
+    coAuthorPatterns: [/replit/i],
+    commitPatterns: [/replit.*ai/i, /replit.*agent/i],
+    fileHeaders: [/replit/i],
+    configKeys: []
+  },
+  {
+    id: 'cline',
+    name: 'Cline',
+    // Verified: Cline (formerly Claude Dev) adds co-author trailers
+    // Source: Cline GitHub, public commits
+    coAuthorEmails: ['cline@cline.bot'],
+    coAuthorPatterns: [/cline/i],
+    commitPatterns: [/cline/i, /claude.dev/i],
+    fileHeaders: [],
+    configKeys: []
+  },
+  {
+    id: 'continue',
+    name: 'Continue',
+    // Community reported patterns
+    // Source: Continue.dev docs
+    coAuthorEmails: [],
+    coAuthorPatterns: [/continue/i],
+    commitPatterns: [/continue\.dev/i],
+    fileHeaders: [/continue/i],
+    configKeys: ['continue.enabled']
+  },
+  {
+    id: 'gpt-engineer',
+    name: 'GPT Engineer',
+    // Community reported patterns
+    // Source: public repos created by GPT Engineer
+    coAuthorEmails: ['gpt-engineer@lovable.dev'],
+    coAuthorPatterns: [/gpt.engineer/i],
+    commitPatterns: [/gpt.engineer/i],
+    fileHeaders: [/gpt.engineer/i],
+    configKeys: []
+  },
+  {
+    id: 'bolt',
+    name: 'Bolt',
+    // Community reported patterns
+    // Source: StackBlitz Bolt, public repos
+    coAuthorEmails: [],
+    coAuthorPatterns: [/bolt/i],
+    commitPatterns: [/bolt\.new/i, /stackblitz.*bolt/i],
+    fileHeaders: [/bolt/i],
+    configKeys: []
   }
 ];
 

@@ -54,16 +54,24 @@ AI Attestation identifies tools through publicly observable signals:
 | GitHub Copilot | `copilot` | Co-author, commit message, config |
 | Cursor | `cursor` | Co-author, commit message |
 | Claude Code | `claude-code` | Co-author, commit message |
-| Codeium | `codeium` | Commit message |
+| Windsurf | `windsurf` | Commit message, file header |
+| Codeium | `codeium` | Commit message, file header |
 | Aider | `aider` | Co-author, commit message |
-| OpenAI Codex CLI | `codex-cli` | Commit message |
-| Gemini Code Assist | `gemini-code-assist` | Commit message |
-| Windsurf | `windsurf` | Commit message |
-| Tabnine | `tabnine` | Commit message |
 | Devin | `devin` | Co-author, commit message |
 | OpenHands | `openhands` | Co-author, commit message |
+| Amazon Q Developer | `amazon-q` | Commit message, file header |
+| OpenAI Codex CLI | `codex-cli` | Commit message, file header |
+| Gemini Code Assist | `gemini-code-assist` | Commit message |
+| JetBrains AI | `jetbrains-ai` | Commit message, file header |
+| Sourcegraph Cody | `sourcegraph-cody` | Co-author, commit message |
+| Tabnine | `tabnine` | Commit message, file header |
+| Replit AI | `replit-ai` | Commit message, file header |
+| Cline | `cline` | Co-author, commit message |
+| Continue | `continue` | Commit message, config |
+| GPT Engineer | `gpt-engineer` | Co-author, commit message |
+| Bolt | `bolt` | Commit message, file header |
 
-Missing a tool? [Add it →](CONTRIBUTING.md)
+Missing a tool? [Add it](CONTRIBUTING.md)
 
 ## The File
 
@@ -238,6 +246,14 @@ reporting false positives, and proposing spec changes.
 - **Code** (CLI, action, tools): [Apache License 2.0](LICENSE)
 - **Specification & Schema**: [CC0 1.0 Universal](LICENSE-SCHEMA) (public domain)
 
+## Related Projects
+
+| Project | Description |
+|---------|-------------|
+| [AI License Notice](https://github.com/korext/ai-license) | Declare AI provenance in open source projects |
+| [Supply Chain Attestation](https://github.com/korext/supply-chain-attestation) | AI provenance across your dependency tree |
+| [AI Incident Registry](https://github.com/korext/ai-incident-registry) | Public registry for AI code failures |
+
 ---
 
-Built by [Korext](https://korext.com) · [oss.korext.com/ai-attestation](https://oss.korext.com/ai-attestation)
+Built by [Korext](https://korext.com) | [oss.korext.com/ai-attestation](https://oss.korext.com/ai-attestation)

@@ -1,6 +1,6 @@
 {
   "name": "@korext/ai-attestation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Track and attest AI generated code in your repository. Open standard for AI code transparency.",
   "keywords": [
     "ai",
@@ -12,6 +12,11 @@
     "claude-code",
     "codeium",
     "aider",
+    "windsurf",
+    "devin",
+    "amazon-q",
+    "tabnine",
+    "cline",
     "code-quality",
     "transparency",
     "audit",
