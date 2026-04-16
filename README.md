@@ -2,7 +2,7 @@
 
 > **An open standard for tracking AI generated code in your repository.**
 
-[![AI Attestation](https://korext-oss-uhozgvpbrq-uc.a.run.app/api/badge/Korext/ai-attestation)](https://korext-oss-uhozgvpbrq-uc.a.run.app/ai-attestation/report/Korext/ai-attestation)
+[![AI Attestation](https://oss.korext.com/api/badge/Korext/ai-attestation)](https://oss.korext.com/ai-attestation/report/Korext/ai-attestation)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Spec: CC0-1.0](https://img.shields.io/badge/Spec-CC0%201.0-lightgrey.svg)](LICENSE-SCHEMA)
 [![npm](https://img.shields.io/npm/v/@korext/ai-attestation)](https://www.npmjs.com/package/@korext/ai-attestation)
