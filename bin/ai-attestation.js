@@ -28,7 +28,7 @@ const c = {
   underlineBlue: isTTY ? '\x1b[4;34m' : '',
 };
 
-const VERSION = '1.0.0';
+const VERSION = '1.0.4';
 
 // Parse arguments
 const args = process.argv.slice(2);
