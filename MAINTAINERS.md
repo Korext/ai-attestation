@@ -5,7 +5,7 @@
 **Tom Bruno**
 Founder, Korext
 
-- GitHub: [@tbrunoh](https://github.com/tbrunoh)
+- GitHub: [@tombruno-korext](https://github.com/tombruno-korext)
 - LinkedIn: [linkedin.com/in/tbrunoh](https://linkedin.com/in/tbrunoh)
 - Contact: [maintainers@korext.com](mailto:maintainers@korext.com)
 
