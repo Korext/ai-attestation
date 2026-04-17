@@ -233,7 +233,7 @@ ai-attestation badge
 This outputs markdown you can paste into your README:
 
 ```markdown
-[![AI Attestation](https://oss.korext.com/badge/owner/repo)](https://oss.korext.com/report/owner/repo)
+[![AI Attestation](https://oss.korext.com/api/badge/owner/repo)](https://oss.korext.com/ai-attestation/report/owner/repo)
 ```
 
 ## Contributing

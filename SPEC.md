@@ -4,9 +4,9 @@
 > You may copy, modify, and use this specification without attribution
 > for any purpose.
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Stable
-**Date:** 2026-04-15
+**Date:** 2026-04-16
 
 ## 1. Purpose and Motivation
 
@@ -63,14 +63,15 @@ file. Tools SHOULD preserve this header when updating the file.
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `schema` | string | Yes | URL to the JSON Schema definition. Must be `https://oss.korext.com/ai-attestation/schema` for version 1.0. |
-| `version` | string | Yes | Schema version. Must be `"1.0"` for this specification. |
+| `schema` | string | Yes | URL to the JSON Schema definition. Must be `https://oss.korext.com/ai-attestation/schema` for version 1.1. |
+| `version` | string | Yes | Schema version. Must be `"1.1"` for this specification. |
 | `repo` | object | Yes | Repository metadata. |
 | `generated` | string | Yes | ISO 8601 timestamp when this file was last generated or updated. |
 | `range` | object | Yes | Time range of commits analyzed. |
 | `ai` | object | Yes | AI tool usage data. |
 | `governance` | object | No | Governance scanning results. |
 | `policy` | object | No | Repository policy configuration. |
+| `radar` | object | No | AI Code Radar metadata and opt-in settings. |
 
 ### 4.2 repo
 
@@ -159,7 +160,18 @@ all fields should be null or their zero values.
 | `ai_code_requires_review` | boolean | No | Whether AI code requires human review. | `true` |
 | `minimum_governance_score` | integer or null | No | Minimum score to pass CI (0 to 100). | `80` |
 | `mandatory_packs` | array | No | Packs that must be applied. | `["security"]` |
-| `block_unscanned_ai_code` | boolean | No | Block AI code without governance scan. | `true` |
+| `block_unscanned_ai_code` | boolean | No | Block AI code that has not been governance scanned. | `true` |
+
+### 4.7 radar
+
+All `radar` fields are optional. Repositories that do not explicitly include them or set `include_in_aggregates` to `false` are still tallied into the global aggregated tracking, but their data will not map into categorized breakdowns (industry, region, maturity, etc).
+
+| Field | Type | Required | Description | Example |
+|-------|------|----------|-------------|---------|
+| `include_in_aggregates` | boolean | No | Toggles inclusion inside AI Code Radar aggregations. Defaults to `true`. | `true` |
+| `region` | string | No | ISO 3166-1 alpha-2 country code for geographic breakdowns. | `US` |
+| `industry` | string | No | Controlled tag for industry sector tracking (`fintech`, `healthcare`, `government`, `education`, `gaming`, `infrastructure`, `ecommerce`, `media`, `other`). | `fintech` |
+| `maturity` | string | No | Controlled tag for repo maturity levels (`prototype`, `alpha`, `beta`, `production`, `legacy`). | `production` |
 
 ## 5. AI Tool Detection Methods
 
@@ -250,7 +262,7 @@ are informational. CI tools decide how to enforce them.
 ## 8. Versioning
 
 The `version` field specifies the schema version. This specification
-defines version `1.0`.
+defines version `1.1`.
 
 Future versions will maintain backward compatibility where possible.
 New fields will be added as optional. Existing fields will not be

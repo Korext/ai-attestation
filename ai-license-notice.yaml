@@ -29,7 +29,7 @@ governance:
   proof_bundle_count: 0
 verification:
   attestation_file: .ai-attestation.yaml
-  online_report: https://oss.korext.com/report/Korext/ai-attestation
+  online_report: https://oss.korext.com/ai-attestation/report/Korext/ai-attestation
 specification:
   url: https://oss.korext.com/ai-license
   license: CC0 1.0 Universal

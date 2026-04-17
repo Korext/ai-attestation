@@ -141,8 +141,8 @@ function printResults(detection, repoInfo, options = {}) {
   }
 
   // Badge
-  const badgeUrl = `https://oss.korext.com/badge/${repoInfo.owner}/${repoInfo.name}`;
-  const reportUrl = `https://oss.korext.com/report/${repoInfo.owner}/${repoInfo.name}`;
+  const badgeUrl = `https://oss.korext.com/api/badge/${repoInfo.owner}/${repoInfo.name}`;
+  const reportUrl = `https://oss.korext.com/ai-attestation/report/${repoInfo.owner}/${repoInfo.name}`;
   console.log(`  ${c.dim}Add this badge to your README:${c.reset}`);
   console.log('');
   console.log(`  ${c.underlineBlue}[![AI Attestation](${badgeUrl})](${reportUrl})${c.reset}`);
@@ -209,8 +209,8 @@ function cmdBadge() {
   const repoInfo = getRepoInfo(cwd);
   const data = readAttestation(cwd);
 
-  const badgeUrl = `https://oss.korext.com/badge/${repoInfo.owner}/${repoInfo.name}`;
-  const reportUrl = `https://oss.korext.com/report/${repoInfo.owner}/${repoInfo.name}`;
+  const badgeUrl = `https://oss.korext.com/api/badge/${repoInfo.owner}/${repoInfo.name}`;
+  const reportUrl = `https://oss.korext.com/ai-attestation/report/${repoInfo.owner}/${repoInfo.name}`;
 
   if (data && data.governance && data.governance.score) {
     console.log(`[![AI Governed: ${data.governance.score}%](${badgeUrl})](${reportUrl})`);
