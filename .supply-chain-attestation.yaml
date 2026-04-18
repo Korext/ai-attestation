@@ -1,0 +1,38 @@
+schema: https://oss.korext.com/supply-chain/schema
+version: '1.0'
+project:
+  name: ai-attestation
+  path: /Users/tombruno/Downloads/ai-attestation/ai-attestation
+  manifest: detected
+  ecosystem: npm
+generated: '2026-04-18T00:23:38.174Z'
+dependencies:
+  total: 2
+  scanned: 2
+  with_attestation: 0
+  without_attestation: 2
+  coverage_percentage: 0
+ai_composition:
+  weighted_percentage: 0
+  aggregate_assisted_commits: 0
+  aggregate_total_commits: 0
+governance_tiers:
+  attested: 0
+  scanned: 0
+  ungoverned: 0
+  no_attestation: 2
+tools_detected: []
+high_risk_dependencies: []
+dependencies_detail:
+  - name: argparse
+    version: 2.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: js-yaml
+    version: 4.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION

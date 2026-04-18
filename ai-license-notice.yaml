@@ -4,11 +4,11 @@ repo:
   owner: Korext
   name: ai-attestation
   url: https://github.com/Korext/ai-attestation
-notice_generated: '2026-04-16T06:09:55.938Z'
+notice_generated: '2026-04-18T00:23:37.612Z'
 attestation_source: .ai-attestation.yaml
 ai_provenance:
   assisted_commits: 0
-  total_commits: 4
+  total_commits: 12
   percentage: 0
 tools_used: []
 human_review:
