@@ -4,7 +4,7 @@
 
 [![AI Attestation](https://oss.korext.com/api/badge/Korext/ai-attestation)](https://oss.korext.com/ai-attestation/report/Korext/ai-attestation)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Spec: CC0-1.0](https://img.shields.io/badge/Spec-CC0%201.0-lightgrey.svg)](LICENSE-SCHEMA)
+[![Spec: CC0-1.0](https://img.shields.io/badge/Spec-CC0%201.0-lightgrey.svg)](LICENSE-SPEC)
 [![npm](https://img.shields.io/npm/v/@korext/ai-attestation)](https://www.npmjs.com/package/@korext/ai-attestation)
 
 AI Attestation is a machine readable YAML file placed in your repository root
@@ -220,7 +220,7 @@ calls. No telemetry. The output file contains only aggregate counts.
 The full specification is available at [SPEC.md](SPEC.md).
 The JSON Schema is available at [schema.json](schema.json).
 
-Both are released under [CC0 1.0 Universal](LICENSE-SCHEMA) (public domain).
+Both are released under [CC0 1.0 Universal](LICENSE-SPEC) (public domain).
 
 ## Badge
 
@@ -244,7 +244,7 @@ reporting false positives, and proposing spec changes.
 ## License
 
 - **Code** (CLI, action, tools): [Apache License 2.0](LICENSE)
-- **Specification & Schema**: [CC0 1.0 Universal](LICENSE-SCHEMA) (public domain)
+- **Specification & Schema**: [CC0 1.0 Universal](LICENSE-SPEC) (public domain)
 
 ## Related Projects
 

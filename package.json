@@ -42,6 +42,7 @@
     "schema.json",
     "LICENSE",
     "LICENSE-SCHEMA",
+    "LICENSE-SPEC",
     "README.md"
   ],
   "engines": {
